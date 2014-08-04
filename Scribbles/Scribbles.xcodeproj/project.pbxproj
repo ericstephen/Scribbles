@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD0CA2F8198FBF43003605B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0CA2F7198FBF43003605B5 /* Foundation.framework */; };
+		DD0CA2FA198FBF44003605B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0CA2F9198FBF44003605B5 /* CoreGraphics.framework */; };
+		DD0CA2FC198FBF44003605B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0CA2FB198FBF44003605B5 /* UIKit.framework */; };
+		DD0CA302198FBF44003605B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD0CA300198FBF44003605B5 /* InfoPlist.strings */; };
+		DD0CA304198FBF44003605B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0CA303198FBF44003605B5 /* main.m */; };
+		DD0CA308198FBF44003605B5 /* SCRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0CA307198FBF44003605B5 /* SCRAppDelegate.m */; };
+		DD0CA30A198FBF44003605B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0CA309198FBF44003605B5 /* Images.xcassets */; };
+		DD0CA311198FBF44003605B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0CA310198FBF44003605B5 /* XCTest.framework */; };
+		DD0CA312198FBF44003605B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0CA2F7198FBF43003605B5 /* Foundation.framework */; };
+		DD0CA313198FBF44003605B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0CA2FB198FBF44003605B5 /* UIKit.framework */; };
+		DD0CA31B198FBF44003605B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD0CA319198FBF44003605B5 /* InfoPlist.strings */; };
+		DD0CA31D198FBF44003605B5 /* ScribblesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0CA31C198FBF44003605B5 /* ScribblesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD0CA314198FBF44003605B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD0CA2EC198FBF43003605B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD0CA2F3198FBF43003605B5;
+			remoteInfo = Scribbles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD0CA2F4198FBF43003605B5 /* Scribbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scribbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0CA2F7198FBF43003605B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD0CA2F9198FBF44003605B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD0CA2FB198FBF44003605B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD0CA2FF198FBF44003605B5 /* Scribbles-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Scribbles-Info.plist"; sourceTree = "<group>"; };
+		DD0CA301198FBF44003605B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD0CA303198FBF44003605B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD0CA305198FBF44003605B5 /* Scribbles-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scribbles-Prefix.pch"; sourceTree = "<group>"; };
+		DD0CA306198FBF44003605B5 /* SCRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRAppDelegate.h; sourceTree = "<group>"; };
+		DD0CA307198FBF44003605B5 /* SCRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRAppDelegate.m; sourceTree = "<group>"; };
+		DD0CA309198FBF44003605B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DD0CA30F198FBF44003605B5 /* ScribblesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScribblesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0CA310198FBF44003605B5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DD0CA318198FBF44003605B5 /* ScribblesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScribblesTests-Info.plist"; sourceTree = "<group>"; };
+		DD0CA31A198FBF44003605B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD0CA31C198FBF44003605B5 /* ScribblesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribblesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD0CA2F1198FBF43003605B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0CA2FA198FBF44003605B5 /* CoreGraphics.framework in Frameworks */,
+				DD0CA2FC198FBF44003605B5 /* UIKit.framework in Frameworks */,
+				DD0CA2F8198FBF43003605B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0CA30C198FBF44003605B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0CA311198FBF44003605B5 /* XCTest.framework in Frameworks */,
+				DD0CA313198FBF44003605B5 /* UIKit.framework in Frameworks */,
+				DD0CA312198FBF44003605B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD0CA2EB198FBF43003605B5 = {
+			isa = PBXGroup;
+			children = (
+				DD0CA2FD198FBF44003605B5 /* Scribbles */,
+				DD0CA316198FBF44003605B5 /* ScribblesTests */,
+				DD0CA2F6198FBF43003605B5 /* Frameworks */,
+				DD0CA2F5198FBF43003605B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD0CA2F5198FBF43003605B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD0CA2F4198FBF43003605B5 /* Scribbles.app */,
+				DD0CA30F198FBF44003605B5 /* ScribblesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD0CA2F6198FBF43003605B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD0CA2F7198FBF43003605B5 /* Foundation.framework */,
+				DD0CA2F9198FBF44003605B5 /* CoreGraphics.framework */,
+				DD0CA2FB198FBF44003605B5 /* UIKit.framework */,
+				DD0CA310198FBF44003605B5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD0CA2FD198FBF44003605B5 /* Scribbles */ = {
+			isa = PBXGroup;
+			children = (
+				DD0CA306198FBF44003605B5 /* SCRAppDelegate.h */,
+				DD0CA307198FBF44003605B5 /* SCRAppDelegate.m */,
+				DD0CA309198FBF44003605B5 /* Images.xcassets */,
+				DD0CA2FE198FBF44003605B5 /* Supporting Files */,
+			);
+			path = Scribbles;
+			sourceTree = "<group>";
+		};
+		DD0CA2FE198FBF44003605B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD0CA2FF198FBF44003605B5 /* Scribbles-Info.plist */,
+				DD0CA300198FBF44003605B5 /* InfoPlist.strings */,
+				DD0CA303198FBF44003605B5 /* main.m */,
+				DD0CA305198FBF44003605B5 /* Scribbles-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD0CA316198FBF44003605B5 /* ScribblesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD0CA31C198FBF44003605B5 /* ScribblesTests.m */,
+				DD0CA317198FBF44003605B5 /* Supporting Files */,
+			);
+			path = ScribblesTests;
+			sourceTree = "<group>";
+		};
+		DD0CA317198FBF44003605B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD0CA318198FBF44003605B5 /* ScribblesTests-Info.plist */,
+				DD0CA319198FBF44003605B5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD0CA2F3198FBF43003605B5 /* Scribbles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0CA320198FBF44003605B5 /* Build configuration list for PBXNativeTarget "Scribbles" */;
+			buildPhases = (
+				DD0CA2F0198FBF43003605B5 /* Sources */,
+				DD0CA2F1198FBF43003605B5 /* Frameworks */,
+				DD0CA2F2198FBF43003605B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scribbles;
+			productName = Scribbles;
+			productReference = DD0CA2F4198FBF43003605B5 /* Scribbles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD0CA30E198FBF44003605B5 /* ScribblesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0CA323198FBF44003605B5 /* Build configuration list for PBXNativeTarget "ScribblesTests" */;
+			buildPhases = (
+				DD0CA30B198FBF44003605B5 /* Sources */,
+				DD0CA30C198FBF44003605B5 /* Frameworks */,
+				DD0CA30D198FBF44003605B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD0CA315198FBF44003605B5 /* PBXTargetDependency */,
+			);
+			name = ScribblesTests;
+			productName = ScribblesTests;
+			productReference = DD0CA30F198FBF44003605B5 /* ScribblesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD0CA2EC198FBF43003605B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SCR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Eric Williams";
+				TargetAttributes = {
+					DD0CA30E198FBF44003605B5 = {
+						TestTargetID = DD0CA2F3198FBF43003605B5;
+					};
+				};
+			};
+			buildConfigurationList = DD0CA2EF198FBF43003605B5 /* Build configuration list for PBXProject "Scribbles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD0CA2EB198FBF43003605B5;
+			productRefGroup = DD0CA2F5198FBF43003605B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD0CA2F3198FBF43003605B5 /* Scribbles */,
+				DD0CA30E198FBF44003605B5 /* ScribblesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD0CA2F2198FBF43003605B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0CA302198FBF44003605B5 /* InfoPlist.strings in Resources */,
+				DD0CA30A198FBF44003605B5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0CA30D198FBF44003605B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0CA31B198FBF44003605B5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD0CA2F0198FBF43003605B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0CA304198FBF44003605B5 /* main.m in Sources */,
+				DD0CA308198FBF44003605B5 /* SCRAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0CA30B198FBF44003605B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0CA31D198FBF44003605B5 /* ScribblesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD0CA315198FBF44003605B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD0CA2F3198FBF43003605B5 /* Scribbles */;
+			targetProxy = DD0CA314198FBF44003605B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD0CA300198FBF44003605B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD0CA301198FBF44003605B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD0CA319198FBF44003605B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD0CA31A198FBF44003605B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD0CA31E198FBF44003605B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD0CA31F198FBF44003605B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD0CA321198FBF44003605B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Scribbles/Scribbles-Prefix.pch";
+				INFOPLIST_FILE = "Scribbles/Scribbles-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD0CA322198FBF44003605B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Scribbles/Scribbles-Prefix.pch";
+				INFOPLIST_FILE = "Scribbles/Scribbles-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DD0CA324198FBF44003605B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Scribbles.app/Scribbles";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Scribbles/Scribbles-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ScribblesTests/ScribblesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DD0CA325198FBF44003605B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Scribbles.app/Scribbles";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Scribbles/Scribbles-Prefix.pch";
+				INFOPLIST_FILE = "ScribblesTests/ScribblesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD0CA2EF198FBF43003605B5 /* Build configuration list for PBXProject "Scribbles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0CA31E198FBF44003605B5 /* Debug */,
+				DD0CA31F198FBF44003605B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD0CA320198FBF44003605B5 /* Build configuration list for PBXNativeTarget "Scribbles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0CA321198FBF44003605B5 /* Debug */,
+				DD0CA322198FBF44003605B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD0CA323198FBF44003605B5 /* Build configuration list for PBXNativeTarget "ScribblesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0CA324198FBF44003605B5 /* Debug */,
+				DD0CA325198FBF44003605B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD0CA2EC198FBF43003605B5 /* Project object */;
+}
