@@ -23,6 +23,7 @@
 		DD0CA32D198FC00D003605B5 /* SCRDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0CA32C198FC00D003605B5 /* SCRDrawView.m */; };
 		DD0CA332199004DF003605B5 /* lines_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0CA330199004DF003605B5 /* lines_button.png */; };
 		DD0CA333199004DF003605B5 /* scribble_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0CA331199004DF003605B5 /* scribble_button.png */; };
+		DD0CA33619910F77003605B5 /* SCRLineWithSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0CA33519910F77003605B5 /* SCRLineWithSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		DD0CA32C198FC00D003605B5 /* SCRDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRDrawView.m; sourceTree = "<group>"; };
 		DD0CA330199004DF003605B5 /* lines_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lines_button.png; sourceTree = "<group>"; };
 		DD0CA331199004DF003605B5 /* scribble_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scribble_button.png; sourceTree = "<group>"; };
+		DD0CA33419910F77003605B5 /* SCRLineWithSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRLineWithSlider.h; sourceTree = "<group>"; };
+		DD0CA33519910F77003605B5 /* SCRLineWithSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRLineWithSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 		DD0CA326198FBF9A003605B5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DD0CA33419910F77003605B5 /* SCRLineWithSlider.h */,
+				DD0CA33519910F77003605B5 /* SCRLineWithSlider.m */,
 				DD0CA32A198FBFC8003605B5 /* Draw Views */,
 				DD0CA327198FBFB7003605B5 /* SCRDrawViewController.h */,
 				DD0CA328198FBFB7003605B5 /* SCRDrawViewController.m */,
@@ -292,6 +297,7 @@
 			files = (
 				DD0CA304198FBF44003605B5 /* main.m in Sources */,
 				DD0CA32D198FC00D003605B5 /* SCRDrawView.m in Sources */,
+				DD0CA33619910F77003605B5 /* SCRLineWithSlider.m in Sources */,
 				DD0CA329198FBFB7003605B5 /* SCRDrawViewController.m in Sources */,
 				DD0CA308198FBF44003605B5 /* SCRAppDelegate.m in Sources */,
 			);
@@ -490,6 +496,7 @@
 				DD0CA322198FBF44003605B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD0CA323198FBF44003605B5 /* Build configuration list for PBXNativeTarget "ScribblesTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +505,7 @@
 				DD0CA325198FBF44003605B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

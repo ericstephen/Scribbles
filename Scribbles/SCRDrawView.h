@@ -18,4 +18,13 @@
 
 @property (nonatomic) UIColor * lineColor;
 
+@property (nonatomic) int lineWidth;
+
+@property (nonatomic) BOOL drawStyle;
+
+
+
+//
+
+
 @end

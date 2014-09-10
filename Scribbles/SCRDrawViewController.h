@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class SCRDrawView;
+
 @interface SCRDrawViewController : UIViewController
+
+@property (nonatomic) SCRDrawView * view;
 
 @end

@@ -15,12 +15,13 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-    
+        
         // if you do not alloc and init the array nothing can be added (must use code below)
         self.scribbles = [@[] mutableCopy];
-        
+        self.lineWidth = 1;
         self.backgroundColor = [UIColor whiteColor];
         self.lineColor = [UIColor darkGrayColor];
+        
     }
     return self;
 }
@@ -36,7 +37,6 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     // this sets stroke or fill colors that follow
-//    [self.lineColor set];
     
     CGContextSetLineCap(context, kCGLineCapRound);
     CGContextSetLineJoin(context, kCGLineJoinRound);
@@ -47,7 +47,7 @@
         
         NSArray * points = scribble[@"points"];
         
-        UIColor *lineColor = scribble[@"color"];
+        UIColor * lineColor = scribble[@"color"];
         
         [lineColor set];
         
@@ -66,44 +66,62 @@
         // this draws the text
         CGContextStrokePath(context);
     }
-
-
-
     
 }
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    
-    int random = arc4random_uniform(20) + 5;
-    
     self.currentScribble = [@{
                               @"color": self.lineColor,
                               @"points": [@[] mutableCopy],
-                              @"width": @(random)
+                              @"width": @(self.lineWidth)
                               } mutableCopy];
-                              
-                              
+    
     [self.scribbles addObject:self.currentScribble];
     
-    [self scribbleWithTouches:touches];
-    
-}
-
--(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+    if (self.drawStyle)
     {
         [self scribbleWithTouches:touches];
+        
+    } else {
+        
+        UITouch * touch = [touches allObjects][0];
+        CGPoint location = [touch locationInView:self];
+        self.currentScribble[@"points"][0] = [NSValue valueWithCGPoint:location];
+        
+        [self setNeedsDisplay];
     }
+    
+}
+-(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+{
+    
+    if (self.drawStyle)
+    {
+        [self scribbleWithTouches:touches];
+        
+    } else {
+        
+        UITouch * touch = [touches allObjects][0];
+        CGPoint location = [touch locationInView:self];
+        
+        self.currentScribble[@"points"][1] = [NSValue valueWithCGPoint:location];
+        
+        [self setNeedsDisplay];
+    }
+    
+}
 
 - (void)scribbleWithTouches: (NSSet *)touches
 {
     for (UITouch * touch in touches)
     {
-    CGPoint location = [touch locationInView:self];
-    [self.currentScribble[@"points"] addObject:[NSValue valueWithCGPoint:location]];
+        CGPoint location = [touch locationInView:self];
+        
+        [self.currentScribble[@"points"] addObject:[NSValue valueWithCGPoint:location]];
+        
+    }
     
-}
-
     [self setNeedsDisplay];
 }
 
